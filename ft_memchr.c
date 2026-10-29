@@ -10,18 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcher(const void *src, int c, size_t n)
-{
-	const char	*s;
-	size_t		i;
+#include "libft.h"
 
-	s = (const char *)src;
+void	*ft_memchr(const void *src, int c, size_t n)
+{
+	const unsigned char	*s;
+	size_t				i;
+
+	s = (const unsigned char *)src;
 	i = 0;
 	while (i < n)
 	{
-		if (s[i] == c)
-			return ((void *d) & s[i]);
+		if (s[i] == (unsigned char)c)
+			return ((void *)&s[i]);
 		i++;
 	}
 	return (NULL);
 }
+/*int	main()
+{
+	char	str[] = "kareem";
+	char	*result;
+
+	result = ft_memchr(str, 'l', 4);
+	if (result != NULL)
+		printf("Found: %c\n", *result);
+	else
+		printf("Not found\n");
+	return (0);
+}*/

@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kakamal <kakamal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/24 17:24:09 by kakamal           #+#    #+#             */
-/*   Updated: 2026/09/28 18:21:58 by kakamal          ###   ########.fr       */
+/*   Created: 2026/10/11 13:52:55 by marvin            #+#    #+#             */
+/*   Updated: 2026/10/11 13:52:55 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*int	main(void)
+void	ft_putchar_fd(char c, int fd)
 {
-	printf("%d", ft_isalnum('3'));
+	write(fd, &c, 1);
+}
+/*
+int	main()
+{
+	ft_putchar_fd('A', 1);
+	
+	return (0);
 }*/

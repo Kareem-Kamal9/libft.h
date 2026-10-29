@@ -18,3 +18,11 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+/*int	main()
+{
+	printf("%d\n", ft_isprint('A'));
+	printf("%d\n", ft_isprint(' '));
+	printf("%d\n", ft_isprint(31));
+	return (0);
+}*/

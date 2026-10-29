@@ -18,12 +18,20 @@ void	*ft_memset(void *s, int c, size_t n)
 	size_t			i;
 
 	i = 0;
-	*p = (unsigned char *)s;
+	p = (unsigned char *)s;
 	while (i < n)
 	{
-		*p = (unsigned char *)c;
-		p++;
+		p[i] = c;
 		i++;
 	}
 	return (s);
 }
+/*
+int	main()
+{
+	char	str[10] = "abcdefghi";
+	printf("Before: %s\n", str);
+	ft_memset(str, 'X', 3);
+	printf("After:  %s\n", str);	
+	return (0);
+}*/

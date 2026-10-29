@@ -22,10 +22,20 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
 	if (d < s)
-		while (n--)
-			*d++ = *s++;
-	else if (d > s)
-		while (n--)
+		ft_memcpy(d, s, n);
+	else
+	{
+		while (n-- > 0)
 			d[n] = s[n];
+	}
 	return (dest);
 }
+/*
+int	main()
+{
+	char	str[] = "ABCDE";
+
+	ft_memmove(str + 1, str, 4);
+	printf("%s\n", str);
+	return (0);
+}*/

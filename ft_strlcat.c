@@ -27,7 +27,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	if (dstsize <= dst_len)
 		return (dstsize + src_len);
 	i = 0;
-	while (src[i] != '\0' && (dst_len + i + 1) < dstsize)
+	while (src[i] != '\0' && (dst_len + i) < (dstsize - 1))
 	{
 		dst[dst_len + i] = src[i];
 		i++;
@@ -35,3 +35,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
+/*int	main()
+{
+	char	dst[20] = "Hello";
+	size_t	result;
+
+	result = ft_strlcat(dst, " World", sizeof(dst));
+	printf("Result: %s | Return: %zu\n", dst, result);
+	return (0);
+}*/

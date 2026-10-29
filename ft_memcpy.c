@@ -14,18 +14,28 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*d;
-	unsigned char	*s;
-	size_t			i;
+	const unsigned char	*s;
+	unsigned char		*d;
+	size_t				i;
 
-	d = (char *)dest;
-	s = (char *)src;
+	if (!dest && !src)
+		return (NULL);
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
 	i = 0;
-	if (!n || dest == src)
-		return (dest);
 	while (i < n)
 	{
-		d[i] == s[i];
+		d[i] = s[i];
 		i++;
 	}
+	return (dest);
 }
+/*int	main()
+{
+	char	src[] = "kareem";
+	char	dest[7];
+
+	ft_memcpy(dest, src, 7);
+	printf("%s", dest);
+	return (0);
+}*/
