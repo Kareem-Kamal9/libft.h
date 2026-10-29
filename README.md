@@ -15,9 +15,9 @@ make
 ```
 
 ### Additional Makefile Rules
-* `make clean`: Removes all compiled object files (`.o`)[cite: 4].
-* `make fclean`: Cleans out object files as well as the generated `libft.a` library file[cite: 4].
-* `make re`: Rebuilds the entire library from scratch (`fclean` followed by `make`)[cite: 4].
+* `make clean`: Removes all compiled object files (`.o`).
+* `make fclean`: Cleans out object files as well as the generated `libft.a` library file.
+* `make re`: Rebuilds the entire library from scratch (`fclean` followed by `make`).
 
 
 ### Usage in Other Projects
@@ -55,8 +55,8 @@ Here are the external video playlists, tutorials, and articles consulted during 
 
 ### AI Assistance
 AI was used purely as a learning guide and formatting assistant for this project:
-* **Logic Clarifications**: Asked for explanations on complex edge cases, such as handling memory overlap in `memmove` vs `memcpy`, and proper memory cleanup in linked lists[cite: 9, 14, 16].
-* **Concept Breakdown**: Clarified pointer-to-pointer usage (`t_list **lst`) in list operations[cite: 14, 15, 17].
-* **Documentation Support**: Assisted in organizing and formatting this `README.md` file[cite: 18].
+* **Logic Clarifications**: Asked for explanations on complex edge cases, such as handling memory overlap in `memmove` vs `memcpy`, and proper memory cleanup in linked lists.
+* **Concept Breakdown**: Clarified pointer-to-pointer usage (`t_list **lst`) in list operations.
+* **Documentation Support**: Assisted in organizing and formatting this `README.md` file.
 
-*Note: AI was never used to write functional C code. All functions, Makefile rules, pointer logic, and Norm checks were manually written, tested, and verified by me[cite: 4, 8, 20].*
+*Note: AI was never used to write functional C code. All functions, Makefile rules, pointer logic, and Norm checks were manually written, tested, and verified by me.*
